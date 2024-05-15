@@ -3,7 +3,7 @@ import Header from '../Components/Header'
 import Welcome from '../Components/Welcome'
 function HomePage() {
   return (
-    <div>
+    <div className='bg-[#2D3250]'>
       <Header/>
       <Welcome/>
     </div>
