@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 function Header(props) {
   return (
     <div>
@@ -7,14 +8,14 @@ function Header(props) {
         <h1>Beta List</h1>
         <nav>
             <ul className='flex flex-row gap-x-3'>
-                <li>Home</li>
-                <li>Featured</li>
-                <li>Genre</li>
+                <li><a href="#Welcome">Home</a></li>
+                <li><a href="#Feaatured">Featured</a></li>
+                <li><a href="#Genres">Genre</a></li>
             </ul>
         </nav>
       </div>
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;

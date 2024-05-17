@@ -8,9 +8,12 @@ import Genres from '../Components/Genres'
 
 function HomePage() {
   return (
-    <div className='bg-[#2D3250]'>
+    <div className='bg-[#070F2B]'>
       <Header/>
-      <Welcome/>
+      <Welcome
+      title='Welcome To the Movie base'
+      image='.\src\Images\Attack on Titan.Jpg'
+      text='Please feel free to browse through.'/>
       <div className='highlights flex flex-col gap-5 w-full justify-center'>
         <h2 className='text-amber-500 flex justify-center'>Featured</h2>
 
