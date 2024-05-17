@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../Components/Header'
 import Welcome from '../Components/Welcome'
 import Genres from '../Components/Genres'
+import Footer from '../Components/Footer'
 
 
 
@@ -21,7 +22,8 @@ function HomePage() {
         <Genres 
       image='.\src\Images\Attack on Titan.Jpg'
       title='Avatar'/>
-      <Genres/>
+      <Genres
+      title='Blue beatle'/>
       <Genres/>
       <Genres/>
       <Genres/>
@@ -43,6 +45,7 @@ function HomePage() {
       title='Romance'/>
       </div>
       </div>
+      <Footer/>
     </div>
   )
 }
