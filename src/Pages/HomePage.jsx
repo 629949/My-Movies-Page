@@ -18,7 +18,7 @@ function HomePage() {
       <div className='highlights flex flex-col gap-5 w-full justify-center'>
         <h2 className='text-amber-500 flex justify-center'>Featured</h2>
 
-        <div className='featured flex flex-row justify-center gap-10'>
+        <div id='featured' className='featured  flex flex-row justify-center gap-10'>
         <Genres 
       image='.\src\Images\Attack on Titan.Jpg'
       title='Avatar'/>
@@ -34,7 +34,7 @@ function HomePage() {
       <div className="category" class='flex flex-col gap-5'>
         <h2 class='flex justify-center text-amber-500'>Genres</h2>
       
-      <div className="genres" class='flex gap-10 w-full justify-center'>
+      <div className="genres" id='genres' class='flex gap-10 w-full justify-center'>
       <Genres
       title='Action'/>
       <Genres
