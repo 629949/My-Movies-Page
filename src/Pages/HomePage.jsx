@@ -36,13 +36,17 @@ function HomePage() {
       
       <div className="genres" id='genres' class='flex gap-10 w-full justify-center'>
       <Genres
-      title='Action'/>
+      title='Action'
+      image= '.\src\Images\John Wick.Jpg'/>
       <Genres
-      title='Comedy'/>
+      title='Comedy'
+      image= '.\src\Images\The Hangover.Jpg'/>
       <Genres
-      title='Anime'/>
+      title='Anime'
+      image= '.\src\Images\Attack on Titan.Jpg'/>
       <Genres
-      title='Romance'/>
+      title='Romance'
+      image= '.\src\Images\friends with benefit.Jpg'/>
       </div>
       </div>
       <Footer/>

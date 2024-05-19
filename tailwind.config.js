@@ -3,7 +3,13 @@ export default {
   content: [ "./index.html",
   "./src/**/*.{vue,js,ts,jsx,tsx}",],
   theme: {
-    extend: {},
+    extend: {
+      scrollBehavior: ['responsive'],
+    },
+  },
+
+  variants: {
+    scrollBehavior: ['responsive'],
   },
   plugins: [],
 }
