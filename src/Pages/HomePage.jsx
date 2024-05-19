@@ -21,7 +21,7 @@ function HomePage() {
         <div id='featured' className='featured  flex flex-row justify-center gap-10'>
         <Genres 
       image='.\src\Images\Attack on Titan.Jpg'
-      title='Avatar'/>
+      title='Avatar'/> 
       <Genres
       title='Blue beatle'/>
       <Genres/>
