@@ -14,14 +14,14 @@ function HomePage() {
   return (
     <div className='bg-[#070F2B]'>
       <Header/>
-      <div className="welcome-section" class='flex justify-center'>
+      <div className="welcome-section" class='flex justify-center font-Roboto text-2xl mt-10'>
       <Welcome
       title='Welcome To the Movie base'
       image='.\src\Images\The hangover.Jpg'
       text='Please feel free to browse through.'/>
       </div>
      
-      <div className='highlights flex flex-col gap-5 w-full justify-center'>
+      <div className=' flex flex-col gap-10 mt-10 w-full justify-center'>
         <h2 className='text-amber-500 flex justify-center'>Featured</h2>
 
         <div id='featured' className='featured  flex flex-row justify-center gap-10'>
