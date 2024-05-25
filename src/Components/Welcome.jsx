@@ -2,11 +2,11 @@
 
 function Welcome(props) {
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col justify-center  w-full'>
       <h1 className='flex text-amber-500 justify-center'>{props.title}</h1>
-      <image class='flex w-full h-80 justifiy-center items-center'>
-        <img class=' w-full h-80 object-center align-center justify-center rounded-lg border ' src={props.image} alt="movie tile" />
-      </image>
+      <div className='flex justify-center items-center w-full h-80  '>
+        <img className='h-80 w-3/5 object-center align-center rounded-lg ' src={props.image} alt="movie tile" />
+      </div>
       <p className='flex text-amber-500 justify-center'>{props.text}</p>
     </div>
   )
