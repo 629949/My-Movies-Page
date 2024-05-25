@@ -11,6 +11,7 @@ function Header(props) {
                 <li className='hover:scale-105 border-b-2 border-amber-500'><a href="#Welcome">Home</a></li>
                 <li className='hover:scale-105  border-b-2 border-amber-500'><a href="#featured">Featured</a></li>
                 <li className='hover:scale-105  border-b-2 border-amber-500'><a href="#genres">Genre</a></li>
+                <input type="text"  className='border'/>
             </ul>
         </nav>
       </div>

@@ -21,10 +21,10 @@ function HomePage() {
       text='Please feel free to browse through.'/>
       </div>
      
-      <div className=' flex flex-col gap-10 mt-10 w-full justify-center'>
-        <h2 className='text-amber-500 flex justify-center'>Featured</h2>
+      <div id='featured' className=' flex flex-col gap-10 mt-10 w-full justify-center'>
+        <h2 className='text-amber-500 flex justify-center text-2xl'>Featured</h2>
 
-        <div id='featured' className='featured  flex flex-row justify-center gap-10'>
+        <div  className='featured  flex flex-row justify-center gap-10'>
         <Genres 
       image='src\Images\John wick.Jpg'
       title='John Wick'/> 
@@ -44,25 +44,39 @@ function HomePage() {
      
       </div>
 
-      <div className="category" class='flex flex-col gap-5'>
-        <h2 class='flex justify-center text-amber-500'>Genres</h2>
+      <div className="flex justify-center mt-20">
+        <Cards
+        height='250px'
+        width='800px'
+        text='Get the Best'
+        paragraph='We offer the best when it comes to keeping up with the latest in the movie world.'
+        />
+      </div>
+
+      <div id='genres' className='flex flex-col gap-5 mt-10'>
+        <h2 class='flex justify-center text-amber-500 text-2xl'>Genres</h2>
       
-      <div className="genres" id='genres' class='flex gap-10 w-full justify-center'>
+      <div className="genres"  class='flex gap-10 w-full justify-center'>
       <Cards
       backgroundImage="./Images/Attack on Titan.Jpg"
-      text="Action"/>
+      text="Action"
+      link='/Action'/>
       <Cards
       text="Comedy"
-      backgroundImage="./src/Images/John wick.Jpg"/>
+      backgroundImage="./src/Images/John wick.Jpg"
+      link='/Comedy'/>
       <Cards
-      text="Drama"
-      backgroundImage="./src/Images/John wick.Jpg"/>
+      text="Romance"
+      backgroundImage="./src/Images/John wick.Jpg"
+      link='/Romance'/>
       <Cards
       text="Animation"
-      backgroundImage="./src/Images/John wick.Jpg"/>
+      backgroundImage="./src/Images/John wick.Jpg"
+      link='/Animation'/>
       <Cards
       text="Horror"
-      backgroundImage="./src/Images/John wick.Jpg"/>
+      backgroundImage="./src/Images/John wick.Jpg"
+      link='/Horror'/>
       </div>
       </div>
       <Footer/>
