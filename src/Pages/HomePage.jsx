@@ -14,7 +14,7 @@ function HomePage() {
   return (
     <div className='bg-[#070F2B]'>
       <Header/>
-      <div className="welcome-section" class='flex justify-center font-Roboto text-2xl mt-10'>
+      <div  className='flex justify-center font-Roboto text-2xl mt-10'>
       <Welcome
       title='Welcome To the Movie base'
       image='.\src\Images\The hangover.Jpg'
@@ -54,9 +54,9 @@ function HomePage() {
       </div>
 
       <div id='genres' className='flex flex-col gap-5 mt-10'>
-        <h2 class='flex justify-center text-amber-500 text-2xl'>Genres</h2>
+        <h2 className='flex justify-center text-amber-500 text-2xl'>Genres</h2>
       
-      <div className="genres"  class='flex gap-10 w-full justify-center'>
+      <div  className='flex gap-10 w-full justify-center'>
       <Cards
       backgroundImage="./Images/Attack on Titan.Jpg"
       text="Action"
@@ -72,7 +72,7 @@ function HomePage() {
       <Cards
       text="Animation"
       backgroundImage="./src/Images/John wick.Jpg"
-      link='/Animation'/>
+      link='/Anime'/>
       <Cards
       text="Horror"
       backgroundImage="./src/Images/John wick.Jpg"

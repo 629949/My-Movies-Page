@@ -3,45 +3,44 @@ import Welcome from '../Components/Welcome'
 
 
 function Comedy() {
-  const List =[
+  const comedyList =[
     {
-      title:'John wick',
-      image:'/src/images/John wick.Jpg',
-      About:'John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes',
+      title:'DeadPool & Wolverine',
+      image:'/src/images/',
+      About:'Wolverine is recovering from his injuries when he crosses paths with the loudmouth, Deadpool. They team up to defeat a common enemy.',
       Trailer:'Watch Trailer',
-      link: 'https://www.imdb.com/video/vi289916185/?playlistId=tt10366206&ref_=tt_pr_ov_vi'
+      link: 'https://www.imdb.com/video/vi419415577/?ref_=sr_tp_vp'
     },
     {
-      title:'Kingdom of the Planet of the Apes',
-      image:'/src/images/kingdom_of_the_planet_of_the_apes_.avif',
-      About:'Many years after the reign of Caesar, a young ape goes on a journey that will lead him to question everything hes been taught about the past and make choices that will define a future for apes and humans alike',
+      title:'Bad Boys: Ride or Die',
+      image:'/src/images/',
+      About:'This Summer, the worlds favorite Bad Boys are back with their iconic mix of edge-of-your seat action and outrageous comedy but this time with a twist: Miamis finest are now on the run',
       Trailer:'Watch Trailer',
-      link: 'https://www.imdb.com/video/vi904447513/?ref_=sr_tp_vp'
+      link: 'https://www.imdb.com/video/vi3000682009/?ref_=sr_tp_vp'
     },
     {
-      title:'Fall Out',
-      image:'/src/images/FallOut.jpeg',
-      About:'In a future, post-apocalyptic Los Angeles brought about by nuclear decimation, citizens must live in underground bunkers to protect themselves from radiation, mutants and bandits.',
-      Trailer:'Watch Trailer',
+      title:'Babes',
+      image:'/src/images/',
+      About:'Lifelong friends Eden and Dawn, one single and wanting a baby, the other already a mother, navigate challenges to their bond when Eden pursues pregnancy alone after a one-night stand.',
       link: 'https://www.imdb.com/video/vi788252185/?ref_=sr_tp_vp'
     },
     {
-      title:'Godzilla X Kong',
-      image:'/src/images/Godzilla X Kong.jpg',
-      About:'Two ancient titans, Godzilla and Kong, clash in an epic battle as humans unravel their intertwined origins and connection to Skull Islands mysteries.',
+      title:'The Roast of Tom Brady',
+      image:'/src/images/',
+      About:'Tom Brady faces the heat in this livestreamed, star-studded roast hosted by Kevin Hart.',
       Trailer:'Watch Trailer',
-      link: 'https://www.imdb.com/video/vi2055259673/?ref_=sr_tp_vp'
+      link: 'https://www.imdb.com/video/vi2295645721/?ref_=sr_tp_vp'
     },
     {
-      title:'The Fall Guy',
-      image:'/src/images/The FallGuy.jpg',
-      About:'A down-and-out stuntman must find the missing star of his ex-girlfriends blockbuster film.',
+      title:'No Hard Feelings',
+      image:'/src/images/',
+      About:'On the brink of losing her home, Maddie finds an intriguing job listing: helicopter parents looking for someone to bring their introverted 19-year-old son out of his shell before college. She has one summer to make him a man or die trying.',
       Trailer:'Watch Trailer',
-      link: 'https://www.imdb.com/video/vi3499935257/?ref_=sr_tp_vp'
+      link: 'https://www.imdb.com/video/vi3394028569/?ref_=sr_tp_vp'
     },
   ]
 
-  const movieList = List.map((movie, index) => (
+  const movieList = comedyList.map((movie, index) => (
     <div  key={index} className='flex flex-col hover:scale-105 border'>
     <h3>Title: {movie.title}</h3>
     <img className='flex rounded-lg w-3/5'src={movie.image} alt="Movie" />
@@ -56,9 +55,9 @@ function Comedy() {
     <div>
       <div>
       <Welcome
-      title='Action'
+      title='Comedy'
       image='.\src\Images\The hangover.Jpg'
-      text='Where Courage defeats all...'/>
+      text='Where Laughter defeats all...'/>
       </div>
      <div className='flex flex-col gap-10 w-3/4'>{movieList}</div>
     </div>
