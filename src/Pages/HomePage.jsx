@@ -6,36 +6,63 @@ import Welcome from '../Components/Welcome'
 import Genres from '../Components/Genres'
 import Footer from '../Components/Footer'
 import Cards from '../Components/Cards'
-import { fetchWelcomeData, fetchGenresData } from '../api/api'
+import { fetchMovies, fetchGenres } from '../api/api'
+
 
 
 
 function HomePage() {
-  const [welcomeData, setWelcomeData] = useState(null);
-  const [genreData, setGenresData] = useState([]);
+  const [movies, setMovies] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+   const [genres, setGenres] = useState([]);
+   console.log('movie', movies)
+ const  findMovie = movies.find(movie => 
+  movie.attributes.genre === 'Action'
+ ) 
+const firstMovie = findMovie?.attributes;
 
   useEffect(()=> {
-      const getData = async () => {
-        try {
-          const welcome = await fetchWelcomeData();
-          setWelcomeData(welcome);
+    // try {
+    //   const getData = async () => {
+    //     const moviesData = await fetchMovies();
+    //       setMovies(moviesData.data);
+    //    setLoading(false);
+    //   };
 
-          const genres = await fetchGenresData();
-          setGenresData(genres);
-        }catch(error) {
-          console.error('Error fetching data:', error);
-        }
-      };
+    //   getData();
+    // }catch(error) {
+    //   setError(error);
+    //   setLoading(false);
 
-      getData();
+    // }
+     fetchMovies().then(response => {
+      setMovies(response.data)
+      setLoading(false)
+
+     }).catch(error=> {
+      setError(error);
+      setLoading(false);
+     })
+
+     fetchGenres().then(response => {
+      setGenres(response.data)
+      setLoading(false)
+
+     }).catch(error=> {
+      setError(error);
+      setLoading(false);
+     })
     
   }, []);
-  
-  if (!welcomeData || genreData.length === 0){
+
+  if (loading){
     return <div>Loading...</div>
   }
 
-
+if(error){
+  return <div>There was an error getting this data...</div>
+}
 
 
 
@@ -44,30 +71,22 @@ function HomePage() {
       <Header/>
       <div  className='flex justify-center font-Roboto text-2xl mt-10'>
       <Welcome
-      title='Welcome To the Movie base'
-      image='.\src\Images\The hangover.Jpg'
-      text='Please feel free to browse through.'/>
+      title={firstMovie.name}
+      image={firstMovie.imageUrl}
+      text={firstMovie.description}
+      />
       </div>
      
       <div id='featured' className=' flex flex-col gap-10 mt-10 w-full justify-center'>
         <h2 className='text-amber-500 flex justify-center text-2xl'>Featured</h2>
 
         <div  className='featured  flex flex-row justify-center gap-10'>
-        <Genres 
-      image='src\Images\John wick.Jpg'
-      title='John Wick'/> 
-      <Genres
-          image='src\Images\Attack on Titan.Jpg'
-      title='Avartar'/>
-      <Genres
-          image='src\Images\friends with benefit.Jpg'
-      title='friends with benefit'/>
-      <Genres
-          image='src\Images\The hangover.Jpg'
-      title='Jumanji'/>
-      <Genres
-          image='src\Images\Attack on Titan.Jpg'
-      title='Fast and furious'/>
+          {
+            movies.map(movie=><Genres key={movie.id}
+              image={movie.attributes?.imageUrl}
+              title={movie.attributes?.name}/> )
+          }
+        
         </div>
      
       </div>
