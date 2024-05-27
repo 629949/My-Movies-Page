@@ -59,13 +59,13 @@ function Comedy() {
   return (
     <div className='flex flex-col bg-[#070F2B] text-white gap-10 w-full  place-content-center'>
       <div className='flex flex-col'>
-      <div className='flex w-3/4 m-5'>
+      <div className='flex justify-center font-Roboto text-2xl mt-10'>
         <Welcome
         title='Comedy'
         image='.\src\Images\The hangover.Jpg'
         text='Laugh untill your Neighbours Complain...'/>
       </div>
-     <div className='flex flex-col justify-center gap-10 w-3/4 m-5 '>{movieList}</div>
+     <div className='flex flex-col justify-center gap-10 w-3/4 text-xl mt-10 '>{movieList}</div>
       </div>
       
     </div>

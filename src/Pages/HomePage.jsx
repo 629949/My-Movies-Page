@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect, useState} from 'react'
 
 
 import Header from '../Components/Header'
@@ -6,11 +6,39 @@ import Welcome from '../Components/Welcome'
 import Genres from '../Components/Genres'
 import Footer from '../Components/Footer'
 import Cards from '../Components/Cards'
-
+import { fetchWelcomeData, fetchGenresData } from '../api/api'
 
 
 
 function HomePage() {
+  const [welcomeData, setWelcomeData] = useState(null);
+  const [genreData, setGenresData] = useState([]);
+
+  useEffect(()=> {
+      const getData = async () => {
+        try {
+          const welcome = await fetchWelcomeData();
+          setWelcomeData(welcome);
+
+          const genres = await fetchGenresData();
+          setGenresData(genres);
+        }catch(error) {
+          console.error('Error fetching data:', error);
+        }
+      };
+
+      getData();
+    
+  }, []);
+  
+  if (!welcomeData || genreData.length === 0){
+    return <div>Loading...</div>
+  }
+
+
+
+
+
   return (
     <div className='bg-[#070F2B]'>
       <Header/>
