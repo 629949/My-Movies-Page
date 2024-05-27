@@ -6,43 +6,73 @@ import Welcome from '../Components/Welcome'
 function Anime() {
   const List =[
     {
-      title:'John wick',
-      image:'/src/images/John wick.Jpg',
-      About:'John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes',
+      title:'If',
+      image:'/src/images/',
+      About:'A young girl who goes through a difficult experience begins to see everyones imaginary friends who have been left behind as their real-life friends have grown up',
       Trailer:'Watch Trailer',
-      link: 'https://www.imdb.com/video/vi289916185/?playlistId=tt10366206&ref_=tt_pr_ov_vi'
+      link:'https://www.imdb.com/video/vi2666907161/?ref_=sr_tp_vp'
     },
     {
-      title:'Kingdom of the Planet of the Apes',
-      image:'/src/images/kingdom_of_the_planet_of_the_apes_.avif',
-      About:'Many years after the reign of Caesar, a young ape goes on a journey that will lead him to question everything hes been taught about the past and make choices that will define a future for apes and humans alike',
+      title:'The Garfield Movie',
+      image:'/src/images/',
+      About:'After Garfields unexpected reunion with his long-lost father, ragged alley cat Vic, he and his canine friend Odie are forced from their perfectly pampered lives to join Vic on a risky heist.',
       Trailer:'Watch Trailer',
-      link: 'https://www.imdb.com/video/vi904447513/?ref_=sr_tp_vp'
+      link: 'https://www.imdb.com/video/vi2796013081/?ref_=sr_tp_vp'
     },
     {
-      title:'Fall Out',
-      image:'/src/images/FallOut.jpeg',
-      About:'In a future, post-apocalyptic Los Angeles brought about by nuclear decimation, citizens must live in underground bunkers to protect themselves from radiation, mutants and bandits.',
+      title:'Kung Fu Panda 4',
+      image:'/src/images/',
+      About:'After Po is tapped to become the Spiritual Leader of the Valley of Peace, he needs to find and train a new Dragon Warrior, while a wicked sorceress plans to re-summon all the master villains whom Po has vanquished to the spirit realm.',
       Trailer:'Watch Trailer',
-      link: 'https://www.imdb.com/video/vi788252185/?ref_=sr_tp_vp'
+      link: 'https://www.imdb.com/video/vi4087399961/?ref_=sr_tp_vp'
     },
     {
-      title:'Godzilla X Kong',
-      image:'/src/images/Godzilla X Kong.jpg',
-      About:'Two ancient titans, Godzilla and Kong, clash in an epic battle as humans unravel their intertwined origins and connection to Skull Islands mysteries.',
+      title:'Inside Out 2',
+      image:'/src/images/',
+      About:'Follow Riley, in her teenage years, encountering new emotions.',
       Trailer:'Watch Trailer',
-      link: 'https://www.imdb.com/video/vi2055259673/?ref_=sr_tp_vp'
+      link: 'https://www.imdb.com/video/vi3717252633/?ref_=sr_tp_vp'
     },
     {
-      title:'The Fall Guy',
-      image:'/src/images/The FallGuy.jpg',
-      About:'A down-and-out stuntman must find the missing star of his ex-girlfriends blockbuster film.',
+      title:'Dispicable Me 4',
+      image:'/src/images/',
+      About:'Gru, Lucy, Margo, Edith, and Agnes welcome a new member to the family, Gru Jr., who is intent on tormenting his dad. Gru faces a new nemesis in Maxime Le Mal and his girlfriend Valentina, and the family is forced to go on the run.',
       Trailer:'Watch Trailer',
-      link: 'https://www.imdb.com/video/vi3499935257/?ref_=sr_tp_vp'
+      link: 'https://www.imdb.com/video/vi2096088601/?ref_=sr_tp_vp'
     },
   ]
-
   const movieList = List.map((movie, index) => (
+    <div  key={index} className='flex flex-row w-4/5 h-50 hover:scale-105 items-center gap-1 border rounded-lg'>
+      <div className=' m-5 w-96 h-64'>
+    <img className=' rounded-lg w-auto h-64'src={movie.image} alt="Movie"/>
+      </div>
+      <div className='flex flex-col w-full h-64 gap-5 m-5'>
+      <h3 className='text-amber-500 '> {movie.title}</h3>
+      <p>About: {movie.About}</p>
+    <a href={movie.link} target="_blank" rel="noopener noreferrer" className='border flex w-28 h-10 rounded-lg justify-center bg-amber-500 text-black items-center font-bold'>
+        {movie.Trailer}
+      </a>
+      </div>
+  </div>
+    
+  ))
+  return (
+    <div className='flex flex-col bg-[#070F2B] text-white gap-10 w-full  place-content-center'>
+      <div className='flex flex-col'>
+      <div className='flex w-3/4 m-5'>
+        <Welcome
+        title='Animation'
+        image='.\src\Images\The hangover.Jpg'
+        text='The child in you...'/>
+      </div>
+     <div className='flex flex-col justify-center gap-10 w-3/4 m-5 '>{movieList}</div>
+      </div>
+      
+    </div>
+   
+  )
+{
+ /* const movieList = List.map((movie, index) => (
     <div key={index} className='flex flex-col hover:scale-105 border'>
     <h3>Title: {movie.title}</h3>
     <img className='flex rounded-lg w-3/5'src={movie.image} alt="Movie" />
@@ -57,14 +87,14 @@ function Anime() {
     <div>
       <div>
       <Welcome
-      title='Action'
+      title='Animation'
       image='.\src\Images\The hangover.Jpg'
-      text='Where Courage defeats all...'/>
+      text='The Childhood that never left'/>
       </div>
      <div className='flex flex-col gap-10 w-3/4'>{movieList}</div>
     </div>
    
-  )
+  )*/}
 }
 
 export default Anime
