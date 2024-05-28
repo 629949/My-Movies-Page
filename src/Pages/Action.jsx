@@ -66,7 +66,7 @@ function Action() {
         image='.\src\Images\The hangover.Jpg'
         text='Where Courage defeats all...'/>
       </div>
-     <div className='flex flex-col gap-10 font-Roboto text-xl mt-10 justify-content: center align-items: center'>{movieList}</div>
+     <div className='flex flex-col gap-10 font-Roboto text-xl mt-10 justify-content: center align-items: center ml-40'>{movieList}</div>
       </div>
       
     </div>

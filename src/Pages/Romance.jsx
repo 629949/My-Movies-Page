@@ -66,7 +66,7 @@ function Romance() {
         image='.\src\Images\The hangover.Jpg'
         text='Lovie dovies...'/>
       </div>
-     <div className='flex flex-col justify-center gap-10 w-3/4 m-5 text-xl mt-10'>{movieList}</div>
+     <div className='flex flex-col justify-center ml-40 gap-10 w-3/4 m-5 text-xl mt-10'>{movieList}</div>
       </div>
       
     </div>

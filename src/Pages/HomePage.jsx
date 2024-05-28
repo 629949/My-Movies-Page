@@ -77,10 +77,9 @@ if(error){
       />
       </div>
      
-      <div id='featured' className=' flex flex-col gap-10 mt-10 w-full justify-center'>
+      <div id='featured' className=' flex flex-col gap-10  mt-10 w-full justify-center'>
         <h2 className='text-amber-500 flex justify-center text-2xl'>Featured</h2>
-
-        <div  className='featured  flex flex-row justify-center gap-10'>
+        <div  className=' flex  justify-auto  gap-10 w-5/6 ml-20 h-64 '>
           {
             movies.map(movie=><Genres key={movie.id}
               image={movie.attributes?.imageUrl}

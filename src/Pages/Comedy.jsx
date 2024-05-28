@@ -65,7 +65,7 @@ function Comedy() {
         image='.\src\Images\The hangover.Jpg'
         text='Laugh untill your Neighbours Complain...'/>
       </div>
-     <div className='flex flex-col justify-center gap-10 w-3/4 text-xl mt-10 '>{movieList}</div>
+     <div className='flex flex-col justify-center gap-10 w-3/4 ml-40 text-xl mt-10 '>{movieList}</div>
       </div>
       
     </div>
