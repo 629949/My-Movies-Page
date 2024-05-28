@@ -106,23 +106,24 @@ if(error){
       <Cards
       backgroundImage="./Images/Attack on Titan.Jpg"
       text="Action"
-      link='/Action'/>
+      link='/Action'
+      image= 'src\Images\Godzilla X Kong.jpg'/>
       <Cards
       text="Comedy"
       backgroundImage="./src/Images/John wick.Jpg"
-      link='/Comedy'/>
+      link='/Comedy'
+      image='src\Images\The hangover.jpg' />
       <Cards
       text="Romance"
       backgroundImage="./src/Images/John wick.Jpg"
-      link='/Romance'/>
+      link='/Romance'
+      image='src\Images\The Idea of You _ Watch online _ Hey Theater.jpeg' />
       <Cards
       text="Animation"
       backgroundImage="./src/Images/John wick.Jpg"
-      link='/Anime'/>
-      <Cards
-      text="Horror"
-      backgroundImage="./src/Images/John wick.Jpg"
-      link='/Horror'/>
+      link='/Anime'
+      image='src\Images\Kung Fu Panda 4 (2024).jpeg' />
+      
       </div>
       </div>
       <Footer/>
