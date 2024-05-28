@@ -90,14 +90,14 @@ if(error){
      
       </div>
 
-      <div className="flex justify-center mt-20">
+      {/* <div className="flex justify-center mt-20">
         <Cards
         height='250px'
         width='800px'
         text='Get the Best'
         paragraph='We offer the best when it comes to keeping up with the latest in the movie world.'
         />
-      </div>
+      </div> */}
 
       <div id='genres' className='flex flex-col gap-5 mt-10'>
         <h2 className='flex justify-center text-amber-500 text-2xl'>Genres</h2>
