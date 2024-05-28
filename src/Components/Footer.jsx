@@ -2,7 +2,8 @@ import React from 'react'
 
 function Footer(props) {
   return (
-    <div className='flex gap-5 bg-grey-200 h-96 mt-8 border justify-center'>
+    <div className='flex flex-col gap-5 bg-gray-700 h-96 mt-8 border justify-center'>
+      <div className='flex gap-5 justify-center'>
       <div>
       <h1 className='text-amber-500'>Get in touch</h1>
       <ul className='text-white'>
@@ -27,6 +28,11 @@ function Footer(props) {
   <button className='border rounded-lg bg-amber-500 '>Send</button>
   </div>
   
+</div>
+      </div>
+      
+<div className='flex justify-center bg-black h-20'>
+  <p className='text-amber-500'>2024 copyright</p>
 </div>
     </div>
   )
