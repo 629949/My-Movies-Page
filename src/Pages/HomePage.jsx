@@ -78,7 +78,7 @@ if(error){
       </div>
      
       <div id='featured' className=' flex flex-col gap-10  mt-10 w-full justify-center'>
-        <h2 className='text-amber-500 flex justify-center text-2xl'>Featured</h2>
+        <h2 className='text-amber-500 flex justify-center text-2xl'><i class='bx bx-folder-plus'>Featured</i></h2>
         <div  className=' flex  justify-auto  gap-10 w-5/6 ml-20 h-64 '>
           {
             movies.map(movie=><Genres key={movie.id}
@@ -100,7 +100,7 @@ if(error){
       </div> */}
 
       <div id='genres' className='flex flex-col gap-5 mt-10'>
-        <h2 className='flex justify-center text-amber-500 text-2xl'>Genres</h2>
+        <h2 className='flex justify-center text-amber-500 text-2xl'><i class='bx bx-folder-plus'>Genres</i></h2>
       
       <div  className='flex gap-10 w-full justify-center'>
       <Cards
