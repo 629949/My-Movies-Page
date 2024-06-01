@@ -6,6 +6,7 @@ import Welcome from '../Components/Welcome'
 import Genres from '../Components/Genres'
 import Footer from '../Components/Footer'
 import Cards from '../Components/Cards'
+import Button from '../Components/Button'
 import { fetchMovies, fetchGenres } from '../api/api'
 
 
@@ -67,7 +68,7 @@ if(error){
 
 
   return (
-    <div className='bg-[#070F2B]'>
+    <div className='bg-[#040303]'>
       <Header/>
       <div  className='flex justify-center font-Roboto text-2xl mt-10'>
       <Welcome
@@ -76,14 +77,18 @@ if(error){
       text={firstMovie.description}
       />
       </div>
-     
+
+      <Button
+      text='Hello'/>
+
       <div id='featured' className=' flex flex-col gap-10  mt-10 w-full justify-center'>
         <h2 className='text-amber-500 flex justify-center text-2xl'><i class='bx bx-folder-plus'>Featured</i></h2>
         <div  className=' flex  justify-auto  gap-10 w-5/6 ml-20 h-64 '>
           {
-            movies.map(movie=><Genres key={movie.id}
+            movies.map((movie, index)=>index < 4 && (<Genres key={movie.id}
               image={movie.attributes?.imageUrl}
               title={movie.attributes?.name}/> )
+            )
           }
         
         </div>
@@ -104,23 +109,19 @@ if(error){
       
       <div  className='flex gap-10 w-full justify-center'>
       <Cards
-      backgroundImage="./Images/Attack on Titan.Jpg"
       text="Action"
       link='/Action'
-      image= 'src\Images\Godzilla X Kong.jpg'/>
+      image= 'src\Images\fc8bdc68-5c64-4e97-b3b5-0ab34db430b5.jpeg'/>
       <Cards
       text="Comedy"
-      backgroundImage="./src/Images/John wick.Jpg"
       link='/Comedy'
-      image='src\Images\The hangover.jpg' />
+      image='src\Images\No Hard Feelings (2023).jpeg' />
       <Cards
       text="Romance"
-      backgroundImage="./src/Images/John wick.Jpg"
       link='/Romance'
       image='src\Images\The Idea of You _ Watch online _ Hey Theater.jpeg' />
       <Cards
       text="Animation"
-      backgroundImage="./src/Images/John wick.Jpg"
       link='/Anime'
       image='src\Images\Kung Fu Panda 4 (2024).jpeg' />
       

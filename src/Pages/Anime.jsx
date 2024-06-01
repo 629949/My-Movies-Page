@@ -58,7 +58,7 @@ function Anime() {
     
   ))
   return (
-    <div className='flex flex-col bg-[#070F2B] text-white gap-10 w-full  place-content-center'>
+    <div className='flex flex-col bg-[#040303] text-white gap-10 w-full  place-content-center'>
       <div className='flex flex-col'>
         <Header/>
       <div className='flex justify-center font-Roboto text-2xl mt-10'>
