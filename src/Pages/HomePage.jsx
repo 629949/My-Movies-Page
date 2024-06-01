@@ -68,7 +68,7 @@ if(error){
 
 
   return (
-    <div className='bg-[#040303]'>
+    <div className='bg-[#040303] min-h-screen'>
       <Header/>
       <div  className='flex justify-center font-Roboto text-2xl mt-10'>
       <Welcome
@@ -79,9 +79,9 @@ if(error){
       </div>
 
 
-      <div id='featured' className=' flex flex-col gap-10  mt-10 w-full justify-center'>
+      <div id='featured' className='flex flex-col gap-10 mt-10 w-full justify-center'>
         <h2 className='text-amber-500 flex justify-center text-2xl'><i class='bx bx-folder-plus'>Featured</i></h2>
-        <div  className=' flex  justify-auto  gap-10 w-5/6 ml-20 h-64 '>
+        <div  className=' flex justify-center  gap-10 w-5/6 ml-20 h-64 lg:mx-20 '>
           {
             movies.map((movie, index)=>index < 4 && (<Genres key={movie.id}
               image={movie.attributes?.imageUrl}
@@ -105,7 +105,7 @@ if(error){
       <div id='genres' className='flex flex-col gap-5 mt-10'>
         <h2 className='flex justify-center text-amber-500 text-2xl'><i class='bx bx-folder-plus'>Genres</i></h2>
       
-      <div  className='flex gap-10 w-full justify-center'>
+      <div  className='flex flex-wrap justify-center gap-10 mx-4'>
       <Cards
       text="Action"
       link='/Action'

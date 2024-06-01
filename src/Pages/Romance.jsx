@@ -44,14 +44,14 @@ function Romance() {
   ]
 
   const movieList = List.map((movie, index) => (
-    <div  key={index} className='flex flex-row w-4/5 h-50 hover:scale-105 items-center gap-1 border rounded-lg'>
-      <div className=' m-5 w-96 h-64'>
-    <img className=' rounded-lg w-auto h-64'src={movie.image} alt="Movie"/>
+    <div  key={index} className='flex flex-col lg:flex-row w-full lg:w-4/5 mx-auto h-auto lg:h-64 hover:scale-105 items-center gap-5 border rounded-lg overflow-hidden'>
+      <div className='m-5 w-full lg:w-1/3 h-64'>
+    <img className='rounded-lg w-full h-full object-cover'src={movie.image} alt="Movie"/>
       </div>
       <div className='flex flex-col w-full h-64 gap-5 m-5'>
       <h3 className='text-amber-500 '> {movie.title}</h3>
       <p>About: {movie.About}</p>
-    <a href={movie.link} target="_blank" rel="noopener noreferrer" className='border flex  w-1/3 h-12 rounded-lg justify-center bg-amber-500 text-black items-center font-bold'>
+    <a href={movie.link} target="_blank" rel="noopener noreferrer" className='border flex w-1/2 lg:w-1/3 h-12 rounded-lg justify-center bg-amber-500 text-black items-center font-bold'>
         {movie.Trailer}
       </a>
       </div>
@@ -68,7 +68,7 @@ function Romance() {
         image='.\src\Images\The hangover.Jpg'
         text='Lovie dovies...'/>
       </div>
-     <div className='flex flex-col justify-center ml-60 gap-10 w-3/4 m-5 text-xl mt-10'>{movieList}</div>
+     <div className='flex flex-col gap-10 font-Roboto text-xl mt-10 justify-center items-center mx-4 lg:mx-0'>{movieList}</div>
       </div>
       <Footer/>
     </div>
