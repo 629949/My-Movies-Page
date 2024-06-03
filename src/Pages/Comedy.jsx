@@ -64,7 +64,7 @@ function Comedy() {
       <div className='flex justify-center font-Roboto text-2xl mt-10'>
         <Welcome
         title='Comedy'
-        image='.\src\Images\The hangover.Jpg'
+        image='.\src\assets\Images\The hangover.Jpg'
         text='Laugh untill your Neighbours Complain...'/>
       </div>
      <div className='flex flex-col gap-10 font-Roboto text-xl mt-10 justify-center items-center mx-4 lg:mx-0 '>{movieList}</div>

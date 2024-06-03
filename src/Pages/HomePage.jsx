@@ -108,7 +108,7 @@ if(error){
       <Cards
       text="Action"
       link='/Action'
-      image= 'src\Images\fc8bdc68-5c64-4e97-b3b5-0ab34db430b5.jpeg'/>
+      image= 'src\assets\Images\fc8bdc68-5c64-4e97-b3b5-0ab34db430b5.jpeg'/>
       <Cards
       text="Comedy"
       link='/Comedy'
