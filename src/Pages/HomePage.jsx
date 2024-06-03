@@ -6,7 +6,6 @@ import Welcome from '../Components/Welcome'
 import Genres from '../Components/Genres'
 import Footer from '../Components/Footer'
 import Cards from '../Components/Cards'
-import Button from '../Components/Button'
 import { fetchMovies, fetchGenres } from '../api/api'
 
 
@@ -81,7 +80,7 @@ if(error){
 
       <div id='featured' className='flex flex-col gap-10 mt-10 w-full justify-center'>
         <h2 className='text-amber-500 flex justify-center text-2xl'><i class='bx bx-folder-plus'>Featured</i></h2>
-        <div  className=' flex justify-center  gap-10 w-5/6 ml-20 h-64 lg:mx-20 '>
+        <div  className=' flex justify-center mx-2 shrink-0 gap-10 lg:mx-20 '>
           {
             movies.map((movie, index)=>index < 4 && (<Genres key={movie.id}
               image={movie.attributes?.imageUrl}
