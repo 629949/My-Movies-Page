@@ -77,8 +77,6 @@ if(error){
       />
       </div>
 
-      <Button
-      text='Hello'/>
 
       <div id='featured' className='flex flex-col gap-10 mt-10 w-full justify-center'>
         <h2 className='text-amber-500 flex justify-center text-2xl'><i class='bx bx-folder-plus'>Featured</i></h2>
@@ -114,7 +112,7 @@ if(error){
       <Cards
       text="Comedy"
       link='/Comedy'
-      image='src\Images\No Hard Feelings (2023).jpeg' />
+      image='src/Images/No Hard Feelings (2023).jpeg' />
       <Cards
       text="Romance"
       link='/Romance'

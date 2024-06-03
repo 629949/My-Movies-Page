@@ -45,7 +45,7 @@ function Anime() {
   const movieList = List.map((movie, index) => (
     <div  key={index} className='flex flex-col lg:flex-row w-full lg:w-4/5 mx-auto h-auto lg:h-64 hover:scale-105 items-center gap-5 border rounded-lg overflow-hidden'>
       <div className='m-5 w-full lg:w-1/3 h-64'>
-    <img className='rounded-lg w-full h-full object-cover'src={movie.image} alt="Movie"/>
+    <img className=' rounded-lg w-auto h-64'src={movie.image} alt="Movie"/>
       </div>
       <div className='flex flex-col w-full h-64 gap-5 m-5'>
       <h3 className='text-amber-500 '> {movie.title}</h3>

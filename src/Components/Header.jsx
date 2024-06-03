@@ -7,7 +7,7 @@ function Header(props) {
         <h1><i class='bx bxs-camera-movie'>Beta List</i></h1>
         <nav>
             <ul className='flex flex-row gap-x-3'>
-                <li className='hover:scale-105 border-b-2 border-amber-500 gap-2'><a href="#Welcome"><i class='bx bx-home '>Home</i></a></li>
+                <li className='hover:scale-105 border-b-2 border-amber-500 gap-2'><a href="/"><i class='bx bx-home '>Home</i></a></li>
                 <li className='hover:scale-105  border-b-2 border-amber-500'><a href="#featured">Featured</a></li>
                 <li className='hover:scale-105  border-b-2 border-amber-500'><a href="#genres">Genre</a></li>
                 <input type="text"  className='border'/>
