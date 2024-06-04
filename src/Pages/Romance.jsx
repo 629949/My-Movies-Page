@@ -50,7 +50,7 @@ function Romance() {
       </div>
       <div className='flex flex-col lg:w-2/3 w-full h-64 gap-5 m-5'>
       <h3 className='text-amber-500 '> {movie.title}</h3>
-      <p>About: {movie.About}</p>
+      <p>{movie.About}</p>
     <a href={movie.link} target="_blank" rel="noopener noreferrer" className='border flex  w-1/3 h-12 rounded-lg justify-center bg-amber-500 text-black items-center font-bold'>
         {movie.Trailer}
       </a>

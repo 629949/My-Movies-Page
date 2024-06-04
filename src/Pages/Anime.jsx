@@ -49,7 +49,7 @@ function Anime() {
       </div>
       <div className='flex flex-col w-full h-64 gap-5 m-5'>
       <h3 className='text-amber-500 '> {movie.title}</h3>
-      <p>About: {movie.About}</p>
+      <p>{movie.About}</p>
     <a href={movie.link} target="_blank" rel="noopener noreferrer" className=' border flex w-1/2 lg:w-1/3 h-12 rounded-lg justify-center bg-amber-500 text-black items-center font-bold'>
         {movie.Trailer}
       </a>
@@ -78,7 +78,7 @@ function Anime() {
     <div key={index} className='flex flex-col hover:scale-105 border'>
     <h3>Title: {movie.title}</h3>
     <img className='flex rounded-lg w-3/5'src={movie.image} alt="Movie" />
-    <p>About: {movie.About}</p>
+    <p>{movie.About}</p>
     <a href={movie.link} target="_blank" rel="noopener noreferrer">
         {movie.Trailer}
       </a>

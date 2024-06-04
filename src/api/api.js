@@ -26,8 +26,8 @@ export async function fetchGenres() {
     }
     };
 
-    export const fetchMoviesByGenre = async (genre) => {
-        const response = await fetch(`${API_BASE_URL}/api/movies`);
+    export const fetchactionMovie = async (genre) => {
+        const response = await fetch(`${API_BASE_URL}/api/action-movies`);
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
