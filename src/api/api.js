@@ -26,7 +26,29 @@ export async function fetchGenres() {
     }
     };
 
-    export const fetchactionMovie = async (genre) => {
+    export const fetchcomedyMovie = async () => {
+        const response = await fetch(`${API_BASE_URL}/api/comedy-movies`);
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      };
+
+      export const fetchanimationMovie = async () => {
+        const response = await fetch(`${API_BASE_URL}/api/animation-movies`);
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      };
+      export const fetchromanceMovie = async () => {
+        const response = await fetch(`${API_BASE_URL}/api/romance-movies`);
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      };
+      export const fetchactionMovie = async () => {
         const response = await fetch(`${API_BASE_URL}/api/action-movies`);
         if (!response.ok) {
           throw new Error('Network response was not ok');

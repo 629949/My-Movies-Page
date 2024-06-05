@@ -1,9 +1,13 @@
 import React from 'react'
 
 function button({text}) {
+  const detail = {
+    path: path,
+    text: text
+  }
   return (
-    <div  >
-      <button className='flex border text-white' >{text}</button>
+    <div  className='flex '>
+      <button className='flex  text-white'>{text}</button>
     </div>
   )
 }

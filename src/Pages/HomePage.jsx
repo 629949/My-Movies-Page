@@ -6,6 +6,7 @@ import Welcome from '../Components/Welcome'
 import Genres from '../Components/Genres'
 import Footer from '../Components/Footer'
 import Cards from '../Components/Cards'
+import Button from '../Components/Button'
 import { fetchMovies, fetchGenres } from '../api/api'
 
 
@@ -23,19 +24,7 @@ function HomePage() {
 const firstMovie = findMovie?.attributes;
 
   useEffect(()=> {
-    // try {
-    //   const getData = async () => {
-    //     const moviesData = await fetchMovies();
-    //       setMovies(moviesData.data);
-    //    setLoading(false);
-    //   };
 
-    //   getData();
-    // }catch(error) {
-    //   setError(error);
-    //   setLoading(false);
-
-    // }
      fetchMovies().then(response => {
       setMovies(response.data)
       setLoading(false)
@@ -77,9 +66,8 @@ if(error){
       />
       </div>
 
-
       <div id='featured' className='flex flex-col gap-10 mt-10 w-full justify-center'>
-        <h2 className='text-amber-500 flex justify-center text-2xl'><i class='bx bx-folder-plus'>Featured</i></h2>
+        <h2 className='text-amber-500 flex justify-center text-2xl '><i class='bx bx-folder-plus '>Featured</i></h2>
         <div  className=' flex justify-center mx-2 shrink-0 gap-10 lg:mx-20 '>
           {
             movies.map((movie, index)=>index < 4 && (<Genres key={movie.id}
